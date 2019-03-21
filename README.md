@@ -1,4 +1,6 @@
-# README
+# Stimulus Nested Forms
+
+## A demo
 
 [Dynamic Nested Forms with Stimulus JS by Chris Oliver](https://gorails.com/episodes/dynamic-nested-forms-with-stimulus-js?autoplay=1)
 
