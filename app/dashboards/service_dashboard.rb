@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "administrate/base_dashboard"
 
 class ServiceDashboard < Administrate::BaseDashboard
@@ -26,42 +28,42 @@ class ServiceDashboard < Administrate::BaseDashboard
   #
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
-  COLLECTION_ATTRIBUTES = [
-    :user,
-    :id,
-    :provider,
-    :uid,
-  ].freeze
+  COLLECTION_ATTRIBUTES = %i(
+    user
+    id
+    provider
+    uid
+  ).freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
-  SHOW_PAGE_ATTRIBUTES = [
-    :user,
-    :id,
-    :provider,
-    :uid,
-    :access_token,
-    :access_token_secret,
-    :refresh_token,
-    :expires_at,
-    :auth,
-    :created_at,
-    :updated_at,
-  ].freeze
+  SHOW_PAGE_ATTRIBUTES = %i(
+    user
+    id
+    provider
+    uid
+    access_token
+    access_token_secret
+    refresh_token
+    expires_at
+    auth
+    created_at
+    updated_at
+  ).freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
-  FORM_ATTRIBUTES = [
-    :user,
-    :provider,
-    :uid,
-    :access_token,
-    :access_token_secret,
-    :refresh_token,
-    :expires_at,
-    :auth,
-  ].freeze
+  FORM_ATTRIBUTES = %i(
+    user
+    provider
+    uid
+    access_token
+    access_token_secret
+    refresh_token
+    expires_at
+    auth
+  ).freeze
 
   # Overwrite this method to customize how services are displayed
   # across all pages of the admin dashboard.

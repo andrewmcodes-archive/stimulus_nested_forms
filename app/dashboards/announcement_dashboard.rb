@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "administrate/base_dashboard"
 
 class AnnouncementDashboard < Administrate::BaseDashboard
@@ -22,34 +24,34 @@ class AnnouncementDashboard < Administrate::BaseDashboard
   #
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
-  COLLECTION_ATTRIBUTES = [
-    :id,
-    :published_at,
-    :announcement_type,
-    :name,
-  ].freeze
+  COLLECTION_ATTRIBUTES = %i(
+    id
+    published_at
+    announcement_type
+    name
+  ).freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
-  SHOW_PAGE_ATTRIBUTES = [
-    :id,
-    :published_at,
-    :announcement_type,
-    :name,
-    :description,
-    :created_at,
-    :updated_at,
-  ].freeze
+  SHOW_PAGE_ATTRIBUTES = %i(
+    id
+    published_at
+    announcement_type
+    name
+    description
+    created_at
+    updated_at
+  ).freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
-  FORM_ATTRIBUTES = [
-    :published_at,
-    :announcement_type,
-    :name,
-    :description,
-  ].freeze
+  FORM_ATTRIBUTES = %i(
+    published_at
+    announcement_type
+    name
+    description
+  ).freeze
 
   # Overwrite this method to customize how announcements are displayed
   # across all pages of the admin dashboard.
