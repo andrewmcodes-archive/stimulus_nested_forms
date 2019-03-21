@@ -1,2 +1,7 @@
-%h1 New project
-= render 'form', project: @project
+.text-center.row
+  .col-12.col-md-8.offset-md-2
+    .card.shadow-lg.rounded
+      %h5.card-header.bg-primary.text-light
+        New Project
+      .card-body
+        = render 'form', project: @project

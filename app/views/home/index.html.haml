@@ -1,5 +1,12 @@
-%h1 Welcome to Jumpstart!
-%p.lead
-  Use this document as a way to quickly start any new project.
-  %br/
-  All you get is this text and a mostly barebones HTML document.
+.text-center.row
+  .col-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3
+    %h1 Welcome to NestedForms!
+    %p.lead Don't like Cocoon or it's jQuery dependency?
+    %p
+      We can use Stimulus JS and build dynamic nested forms in Rails with accepts_nested_attributes_for from scratch pretty easily!
+    %p.mb-4
+      Tutorial:
+      = link_to "Dynamic Nested Forms with Stimulus JS by Chris Oliver", "https://gorails.com/episodes/dynamic-nested-forms-with-stimulus-js?autoplay=1", target: "_blank"
+    .row
+      .col-6.offset-3
+        = link_to "Projects", projects_path, class: "btn btn-primary btn-block"

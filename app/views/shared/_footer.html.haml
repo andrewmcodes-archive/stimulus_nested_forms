@@ -1,9 +1,9 @@
-%footer.footer.text-muted.bg-light
+%footer.footer.text-muted.bg-dark
   .container
     %span
       ©#{Date.today.year} Andrew Mason
     %ul.list-inline.mb-0.float-right
       %li.list-inline-item.mr-3
-        = link_to "Terms", terms_path
+        = link_to "Terms", terms_path, class: "text-muted"
       %li.list-inline-item.mr-3
-        = link_to "Privacy", privacy_path
+        = link_to "Privacy", privacy_path, class: "text-muted"
